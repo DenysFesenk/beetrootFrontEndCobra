@@ -1,0 +1,20 @@
+body {
+    padding: 30px 30px;
+    font-size: 1.2em;
+    width: 960px;
+    margin: 0 auto;
+    background: #fafafa;
+}
+
+div {
+    padding: 30px;
+    background: #fff;
+}
+
+img {
+    width: 400px;
+}
+
+.education span{
+    display: block;
+}

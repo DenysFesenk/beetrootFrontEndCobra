@@ -1,0 +1,14 @@
+h1 {
+    text-transform: capitalize;
+    margin: 20px 10px;
+}
+
+ul {
+    padding-left: 40px;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
