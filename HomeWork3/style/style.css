@@ -52,7 +52,11 @@ li {
 }
 
 .links li {
-    padding-top: 11px;
+    margin-bottom: 11px;
+}
+
+.links li:last-child {
+    margin-bottom: 0;
 }
 
 .links li a {
