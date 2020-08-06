@@ -2,6 +2,7 @@ body {
     background: #990109;
     font-size: 18px;
     color: white;
+    min-height: 100%;
 }
 
 li {

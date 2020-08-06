@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +13,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .logo {
@@ -41,6 +43,11 @@ hr {
 
 li {
     list-style: none;
+}
+
+.footer{
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .kasper{
