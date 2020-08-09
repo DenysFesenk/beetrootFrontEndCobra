@@ -1,0 +1,32 @@
+.lists {
+    
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.lists li {
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.lists li:first-child {
+    border: 1px solid black;
+}
+
+.lists li:nth-child(2) {
+    border: 1px solid red;
+}
+
+.lists li:nth-child(3) {
+    border: 1px solid green;
+}
+
+.lists li:nth-child(4) {
+    border: 1px solid yellow;
+}
+
+.lists li:last-child {
+    border: 1px solid peru;
+}
