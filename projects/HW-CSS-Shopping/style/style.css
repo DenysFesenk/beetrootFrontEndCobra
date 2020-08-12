@@ -44,6 +44,7 @@ h1 {
     opacity: .75;
     font-weight: 400;
     color: var(--white);
+    transition: all .1s ease-in;
 } 
 
 li:first-child {
@@ -81,11 +82,11 @@ li:hover {
     border-bottom: 2px solid var(--white);
 }
 
-.footer {
+.footer__btn {
     background: var(--bgr-color-title);
-    color: var(--title-color);
     padding: 20px 0;
-    font-size: 30px;
     width: 50%;
     margin: 0 auto;
+    color: var(--title-color);
+    font-size: 30px;
 }
