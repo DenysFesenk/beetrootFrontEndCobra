@@ -44,7 +44,6 @@ h1 {
     opacity: .75;
     font-weight: 400;
     color: var(--white);
-    transition: all .1s ease-in;
 } 
 
 li:first-child {
@@ -74,6 +73,7 @@ li:last-child {
 li {
     list-style: none;
     padding: 20px;
+    /* transition: all .2s ease-in; */
 }
 
 li:hover {
@@ -82,7 +82,11 @@ li:hover {
     border-bottom: 2px solid var(--white);
 }
 
-.footer__btn {
+li:active {
+    background: red;
+}
+
+.btn {
     background: var(--bgr-color-title);
     padding: 20px 0;
     width: 50%;

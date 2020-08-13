@@ -16,21 +16,20 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.logo {
+.header {
     margin-bottom: 50px;
+}
+
+.main {
+    margin-bottom: 80px;
 }
 
 .title {
     margin-bottom: 20px;
     font-size: 14px;
     text-align: center;
-}
-
-hr {
-    width: 232px;
-    height: 2px;
-    background: #FFFFFF;
-    margin-bottom: 20px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 20px;
 }
 
 .icons {
@@ -38,7 +37,6 @@ hr {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 80px;
 }
 
 li {
