@@ -1,4 +1,13 @@
 # Gulp-assembler
+HomeWork1
+HomeWork2
+HomeWork3
+HomeWork4
+HW-CSS-Servises
+HWPhotoShop
+HW-CSS-Shopping
+
+
 * Install `gulp-cli`:
 ```
 npm install gulp-cli -g
