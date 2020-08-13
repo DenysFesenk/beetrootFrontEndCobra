@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -18,6 +19,10 @@ body {
 
 .header {
     margin-bottom: 50px;
+}
+
+.header__link img{
+    display: block;
 }
 
 .main {

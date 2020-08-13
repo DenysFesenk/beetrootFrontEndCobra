@@ -1,8 +1,8 @@
 :root {
     --white: white;
-    --second-color: #cdcbd6;
+    --second-color: #88839e;
     --title-color: #eb7773;
-    --active-form-color: #88839e;
+    --active-form-color: #7a7593;
     --bgr-color-body: #3b3f45;
     --bgr-color-title: #4a4f56;
 }
@@ -21,63 +21,94 @@ body {
 }
 
 .header {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     background: var(--bgr-color-title);
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
     color: var(--title-color);
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .header p {
-    font-size: 30px;
+    font-size: 25px;
+}
+
+.list .list__fisrt-name input[type="checkbox"]:checked {
+    text-decoration: line-through;
 }
 
 .list {
     width: 50%;
-    margin: 0 auto 50px;
+    margin: 0 auto 40px;
     text-align: left;
-    font-size: 25px;
-    opacity: .75;
     font-weight: 400;
-    color: var(--white);
 } 
+
+.list__fisrt-name {
+    font-size: 25px;
+    color: var(--white);
+}
+
+.list__second-name {
+    font-size: 20px;
+    color: #9a9bb3;
+}
+
+.list__second-name::before {
+    content: '( ';
+}
+
+.list__second-name::after {
+    content: ' )';
+}
 
 li:first-child {
     background: var(--second-color);
+    border-top: 2px solid var(--second-color);
+    border-bottom: 2px solid var(--second-color);
 }
 
 li:nth-child(2) {
     background: var(--active-form-color);
+    border-top: 2px solid var(--active-form-color);
+    border-bottom: 2px solid var(--active-form-color);
 }
 
 li:nth-child(3) {
     background: var(--second-color);
+    border-top: 2px solid var(--second-color);
+    border-bottom: 2px solid var(--second-color);
 }
 
 li:nth-child(4) {
     background: var(--active-form-color);
+    border-top: 2px solid var(--active-form-color);
+    border-bottom: 2px solid var(--active-form-color);
 }
 
 li:nth-child(5) {
     background: var(--second-color);
+    border-top: 2px solid var(--second-color);
+    border-bottom: 2px solid var(--second-color);
 }
 
 li:last-child {
     background: var(--active-form-color);
+    border-top: 2px solid var(--active-form-color);
+    border-bottom: 2px solid var(--active-form-color);
 }
 
 li {
     list-style: none;
-    padding: 20px;
+    padding: 10px;
     /* transition: all .2s ease-in; */
 }
 
 li:hover {
-    opacity: 1;
+    background-color: #625e76;
     border-top: 2px solid var(--white);
     border-bottom: 2px solid var(--white);
 }
@@ -88,9 +119,9 @@ li:active {
 
 .btn {
     background: var(--bgr-color-title);
-    padding: 20px 0;
+    padding: 10px 0;
     width: 50%;
     margin: 0 auto;
     color: var(--title-color);
-    font-size: 30px;
+    font-size: 25px;
 }
