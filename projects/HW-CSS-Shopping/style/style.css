@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    src: url(./assets/9412.ttf);
+    font-style: normal; 
+    font-weight: normal; 
+}
+
 :root {
     --white: white;
     --checked-color: #9a9bb3;
@@ -19,14 +26,18 @@ body {
     background: var(--bgr-color-body);
     text-align: center;
     border: 20px solid var(--white);
+    font-family: 'Trebuchet MS';
 }
 
 .header {
     margin-bottom: 40px;
     background: var(--bgr-color-title);
     width: 100%;
-    padding: 10px 0;
+    height: 90px;
     color: var(--title-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 h1 {
@@ -37,9 +48,53 @@ h1 {
     font-size: 25px;
 }
 
-.list input[type='checkbox']:checked + span {
+input[type=checkbox]:checked + span {
     text-decoration: line-through;
     color: var(--checked-color);
+}
+
+input[type=checkbox]{
+    display: none;
+  }
+  
+.flag {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    
+    background-color: #dedede;
+    margin-right: 15px;
+  
+    position: relative;
+}
+  
+.flag::before {
+    content:"";
+    position: absolute;
+  
+    display: inline-block;
+    opacity: 0;
+    transition: all .1s easy-in;
+  
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 14px;
+    border: solid #424242;
+    border-width: 0 6px 5px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+input[type='checkbox']:checked + label .flag::before {
+    opacity: 1;
+}
+
+label {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
 }
 
 .list {
@@ -105,18 +160,16 @@ li:last-child {
 
 li {
     list-style: none;
-    padding: 10px;
-    /* transition: all .2s ease-in; */
+    transition: all .2s ease-in;
 }
 
 li:hover {
-    background-color: #625e76;
     border-top: 2px solid var(--white);
     border-bottom: 2px solid var(--white);
 }
 
 li:active {
-    background: red;
+    background: #625e76;
 }
 
 .btn {
@@ -126,4 +179,5 @@ li:active {
     margin: 0 auto;
     color: var(--title-color);
     font-size: 25px;
+    cursor: pointer;
 }
