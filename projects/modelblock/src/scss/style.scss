@@ -1,0 +1,64 @@
+@import "vars";
+@import "mixins";
+@import "common";
+
+.main {
+    width: 984px;
+    margin: 0 auto;
+
+    &__title {
+        display: inline-block;
+    }
+    &__lists {
+        font-size: 0;
+        &--li{
+            width: 25%;
+            display: inline-block;
+            background-color: $paris;
+            font-size: $title-text;
+            padding: 15px 0;
+        }
+        &--li:nth-child(2){
+            background-color: $paris;
+        }
+        &--li:nth-child(3){
+            background-color: $belgrad;
+        }
+        &--li:nth-child(4){
+            background-color: $moscow;
+        }
+        &--li:nth-child(5){
+            background-color: $tel-aviv;
+        }
+        &--li:nth-child(6){
+            background-color: $cair;
+        }
+        &--li:nth-child(7){
+            background-color: $new-york;
+        }
+        &--li:nth-child(8){
+            background-color: $new-dehli;
+        }
+        &--li:nth-child(9){
+            width: 50%;
+            background-color: $san-fra;
+        }
+        &--li:nth-child(10){
+            background-color: $tokyo;
+        }
+        &--li:first-child{
+            width: 50%;
+            background-color: $sydney;
+        } 
+        &--li:last-child {
+            width: 100%;
+        }
+        &--li:hover {
+
+        }
+        
+    }
+    &__footer{
+
+    }
+}
