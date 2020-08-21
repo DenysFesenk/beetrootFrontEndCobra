@@ -1,0 +1,50 @@
+@import "vars";
+@import "mixins";
+@import "common";
+.main {
+    max-width: 1200px;
+    &__block{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: end;
+        border: 1px solid black;
+        width: 360px;
+        margin-right: 19px;
+        &--img{
+
+        }
+        &--data{
+
+        }
+        &--content{
+
+        }
+        &--author{
+
+        }
+    }
+    &__block:first-child {
+        display: flex;
+        width: 740px;
+        &--img{
+
+        }
+        &--data{
+
+        }
+        &--content{
+
+        }
+    }
+    &__block:last-child{
+        margin-right: 0;
+    }
+    &__load{
+
+    }
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
