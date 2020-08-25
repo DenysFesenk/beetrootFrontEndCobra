@@ -3,48 +3,80 @@
 @import "common";
 .main {
     max-width: 1200px;
+    padding-top: 90px;
     &__block{
         display: flex;
-        justify-content: center;
         flex-direction: column;
-        align-items: end;
-        border: 1px solid black;
-        width: 360px;
-        margin-right: 19px;
-        &--img{
 
+        width: 360px;
+        height: 540px;
+        margin-right: 19px;
+        margin-bottom: 20px;
+        background-color: $white;
+        img{
+            margin-bottom: 28px;
         }
         &--data{
-
+            color: $grey;
+            font-size: $small-text;
+            margin-bottom: 20px;
+            padding-left: $pd;
+        }
+        &--data:first-child {
+            padding-left: 47px;
+            padding-top: 404px;
+            margin-bottom: 23px;
+            font-size: $small-text;
         }
         &--content{
-
+            color: $black;
+            font-size: $medium-text;
+            font-weight: bold;
+            margin-bottom: 70px;
+            padding-left: $pd;
+        }
+        &--content-first {
+            font-size: $big-text;
+            color: $white;
+            width: 500px;
+            padding-left: 44px;
         }
         &--author{
-
+            width: 54px;
+            padding-left: $pd;
+            
         }
     }
     &__block:first-child {
         display: flex;
         width: 740px;
-        &--img{
-
-        }
-        &--data{
-
-        }
-        &--content{
-
-        }
+        z-index: 2;
+        background: url('../img/Layer\ 8@1X.png');
+        box-shadow: inset 0px -400px 100px -50px rgba(0,0,0,0.6);
     }
     &__block:last-child{
         margin-right: 0;
     }
+    &__block:nth-child(4){
+        img {
+            margin-bottom: 62px;
+        }
+    }
     &__load{
-
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;  
+        font-size: $small-text;  
+        color: $grey;
+        font-weight: bold;
+        span {
+            padding-left: 13px;
+        }
     }
 }
 .container {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 88px;
 }

@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@font-face {
+    font-family: "HansKendrick-Regular";
+    src: url(../assets/fonts/HansKendrick-Regular.otf);
+}
 
 *{
     padding: 0;
@@ -7,9 +10,12 @@
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "HansKendrick-Regular", serif;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-color: $bg-color;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
