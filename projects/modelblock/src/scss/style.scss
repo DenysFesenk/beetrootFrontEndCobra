@@ -8,14 +8,13 @@
 
     &__title {
         display: inline-block;
-        padding-top: 40px;
-        margin-bottom: 40px;
+        padding: 40px 0;
         font-size: $title-text;
     }
     &__lists {
         font-size: 0;
         margin-bottom: 40px;
-        &--li{
+        &-li{
             width: 25%;
             display: inline-block;
             background-color: $bg-color;
@@ -29,38 +28,38 @@
                 }
             }
         }
-        &--li:first-child{
+        &-li:first-child{
             width: 50%;
         }
-        &--li:nth-child(2){
+        &-li:nth-child(2){
             background-color: $paris;
         }
-        &--li:nth-child(3){
+        &-li:nth-child(3){
             background-color: $belgrad;
         }
-        &--li:nth-child(4){
+        &-li:nth-child(4){
             background-color: $moscow;
         }
-        &--li:nth-child(5){
+        &-li:nth-child(5){
             background-color: $tel-aviv;
         }
-        &--li:nth-child(6){
+        &-li:nth-child(6){
             background-color: $cair;
         }
-        &--li:nth-child(7){
+        &-li:nth-child(7){
             background-color: $new-york;
         }
-        &--li:nth-child(8){
+        &-li:nth-child(8){
             background-color: $new-dehli;
         }
-        &--li:nth-child(9){
+        &-li:nth-child(9){
             width: 50%;
             background-color: $san-fra;
         }
-        &--li:nth-child(10){
+        &-li:nth-child(10){
             background-color: $tokyo;
         } 
-        &--li:last-child {
+        &-li:last-child {
             width: 100%;
             background-color: $sydney;
         }  
@@ -71,7 +70,7 @@
 }
 
 ul:hover li {
-    opacity: .6;
+    opacity: .7;
 }
 
 ul:hover li:hover {
