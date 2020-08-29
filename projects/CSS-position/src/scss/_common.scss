@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    background-color: #b7b7b7;
+}
+
+ul {
+    list-style: none;
+}
