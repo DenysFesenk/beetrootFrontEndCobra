@@ -10,11 +10,21 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 100vh;
-    background-color: #b7b7b7;
+    min-height: 100vh;
     font-family: 'Lato', sans-serif;
+    min-width: 1170px;
 }
 
 ul {
     list-style: none;
+}
+
+img {
+    width: 270px;
+    height: 270px;
+}
+
+svg {
+    fill: $white;
+    width: 23px;
 }

@@ -1,3 +1,100 @@
 @import "vars";
 @import "mixins";
 @import "common";
+
+.block {
+    margin: 0 auto;
+    width: 100%;
+    &__title{
+        padding: 58px 0 64px;
+        font-weight: 700;
+        color: $black;
+        font-size: $title-text;
+        text-transform: uppercase;
+        position: relative;
+        text-align: center;
+        &:before {
+            position: absolute;
+            content: '';
+            width: 26px;
+            height: 3px;
+            background-color: #DDDBDB;
+            left: 50%;
+            top: 103px;
+            transform: translateX(-50%);
+        }
+    }
+    &__information{
+        font-size: $small-text;
+        font-weight: 300;
+        color: $grey;
+        margin:0 auto 58px;
+        width: 560px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    &__cards{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        img {
+            margin-bottom: 21px;
+        }
+    }
+    &__card-item{ 
+        cursor: pointer;
+        z-index: 3;
+    }
+    &__name{
+        color: $black;
+        font-size: $medium-text;
+        font-weight: 700;
+    }
+    &__post{
+        color: $grey;
+        font-size: $small-text;
+        opacity: .8;
+    }
+    &__social{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        width: 270px;
+        height: 270px;
+        background-color: $bg-color;
+        margin-top: -335px;
+        cursor: pointer;
+        z-index: 4;
+        opacity: 0;
+    }
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li{ padding-top: 114px;
+            margin-right: 3px;
+            &:last-child{
+                margin-right: 0;
+            }
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                display: inline-flex;
+                width: 43px;
+                height: 43px;
+                background-color: $sc-color;
+            }
+        }
+       
+    }
+}
+
+.block__item:hover {
+    opacity: 1;
+    transition: all .2s ease-in-out;
+}
