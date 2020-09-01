@@ -82,9 +82,10 @@
         font-weight: 300;
         font-size: $medium-text;
         color: $white;
-        box-shadow: 2px 2px 12px 0px rgba(0,0,0,0.75);
+        box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
         border: none;
         font-family: 'Raleway', sans-serif;
         margin-bottom: 121px;
+        cursor: pointer;
     }
 }
