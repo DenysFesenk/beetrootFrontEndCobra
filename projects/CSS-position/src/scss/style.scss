@@ -66,7 +66,7 @@
         width: 270px;
         height: 270px;
         background-color: $bg-color;
-        margin-top: -335px;
+        transform: translateY(-335px);
         cursor: pointer;
         z-index: 4;
         opacity: 0;
