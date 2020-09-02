@@ -1,3 +1,102 @@
 @import "vars";
 @import "mixins";
 @import "common";
+
+.main {
+    &__nike-card{
+        max-width: 687px;
+        min-height: 392px;
+        border-radius: 5px;
+        background-color: $bg-color;
+        display: flex;
+        justify-content: stretch;
+        align-items: stretch;
+        z-index: 1;
+        flex: 1;
+    }
+    &__left-info{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        flex: 1;
+        position: relative;
+        svg{
+            position: absolute;
+            width: 65px;
+            left: 22px;
+            top: 25px;
+        }
+    }
+    &__img-shoes{
+        padding-top: 127px;
+        padding-left: 37px;
+    }
+    &__dots{
+
+    }
+    &__right-info{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        flex: 1;
+        flex-basis: 250px;
+        max-width: 235px;
+    }
+    &__title{
+        display: flex;
+        padding-top: 79px;
+        font-size: $title-text;
+        margin-bottom: 16px;
+    }
+    &__subtitle{
+        font-size: $main-text;
+        opacity: .54;
+        margin-bottom: 24px;
+    }
+    &__rating{
+        display: flex;
+        margin-bottom: 26px;
+    }
+    &__star{
+        width: 12px;
+        height: 12px;
+        fill: $gold-star;
+        margin-right: 2px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__star--none{
+        fill: $white;
+        opacity: .54;
+    }
+    &__selects{
+        margin-bottom: 28px;
+        display: flex;
+    }
+    &__select-opt{
+        width: 70px;
+        height: 33px;
+        background-color: $bg-color;
+        color: $white;
+        border: solid 1px $white;
+        opacity: .54;
+        outline: none;
+        cursor: pointer;
+        &:first-child{
+            margin-right: 3px;
+        }
+    }
+    &__btn{
+        width: 180px;
+        height: 41px;
+        border: solid 1px $white;
+        background-color: $bg-button;
+        color: $white;
+        opacity: .54;
+        cursor: pointer;
+        outline: none;
+    }
+}
