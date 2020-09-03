@@ -31,9 +31,53 @@
     &__img-shoes{
         padding-top: 127px;
         padding-left: 37px;
+        margin-bottom: 73px;
     }
-    &__dots{
-
+    &__points{
+        margin: auto;
+        margin-bottom: 19px;
+        display: flex;
+    }
+    &__point{
+        display: none;
+    }
+    &__new-point{
+        position: relative;
+        margin-right: 19px;
+        &:before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 10px;
+            height: 10px;                
+            background-color: $dark-point;
+            border-radius: 50%;
+            cursor: pointer;
+            transform: translate(-50%, -50%);         
+        }
+        &--white-point{
+            &:before{
+                background-color: $white; 
+            }
+        }
+        &--red-point{
+            &:before{
+                background-color: $red-point;  
+            }
+        }
+        &--blue-point{
+            &:before{
+                background-color: $blue-point;
+                margin-right: 0;
+            }
+        }
+    }
+    input[type=radio]:checked ~ span:before {
+        border: solid 2px $white;
+        transform: translate(-50%, -50%);
+        width: 13px;
+        height: 13px;
     }
     &__right-info{
         display: flex;
@@ -98,5 +142,8 @@
         opacity: .54;
         cursor: pointer;
         outline: none;
+        &:active{
+            box-shadow: inset 1px 1px 8px 1px $bg-color;
+        }
     }
 }
