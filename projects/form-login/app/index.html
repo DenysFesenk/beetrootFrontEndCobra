@@ -3,12 +3,39 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
-	<title>Title</title>
+	<title>Login</title>
 	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+	<form action="/login" method="post" class="form-login">
+		<ul class="form-login__input">
+			<li class="form-login__action">
+				<span class="form-login__sign-in">Sign in</span>
+				<span class="form-login__join-us">Join us</span>
+			</li>
+			<li class="form-login__username">
+				<label for="Usermane">Username</label>
+				<input type="text" id="Username" name="Username">
+			</li>
+			<li class="form-login__password">
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password">
+			</li>
+			<li class="form-login__checkbox">
+				<input type="checkbox" id="check" name="check" checked>
+				<label for="check">Keep me signed in</label>
+			</li>
+			<li class="form-login__btn">
+				<button type="">Sign in</button>
+			</li>
+			<li class="form-login__setting">
+				<a href="#">Forgot password</a>
+				<a href="#">Create an account</a>
+			</li>
+		</ul>
+	</form>
 	<script src="js/bundle.js"></script>
 </body>
 </html>
