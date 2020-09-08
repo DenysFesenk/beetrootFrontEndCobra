@@ -1,51 +1,17 @@
 @import "vars";
 @import "mixins";
 @import "common";
-.main {
+.news {
     max-width: 1200px;
     padding-top: 90px;
     &__block{
         display: flex;
         flex-direction: column;
-
         width: 360px;
         height: 540px;
         margin-right: 19px;
         margin-bottom: 20px;
         background-color: $white;
-        img{
-            margin-bottom: 28px;
-        }
-        &--data{
-            color: $grey;
-            font-size: $small-text;
-            margin-bottom: 20px;
-            padding-left: $pd;
-        }
-        &--data:first-child {
-            padding-left: 47px;
-            padding-top: 404px;
-            margin-bottom: 23px;
-            font-size: $small-text;
-        }
-        &--content{
-            color: $black;
-            font-size: $medium-text;
-            font-weight: bold;
-            margin-bottom: 70px;
-            padding-left: $pd;
-        }
-        &--content-first {
-            font-size: $big-text;
-            color: $white;
-            width: 500px;
-            padding-left: 44px;
-        }
-        &--author{
-            width: 54px;
-            padding-left: $pd;
-            
-        }
     }
     &__block:first-child {
         display: flex;
@@ -54,7 +20,7 @@
         background: url('../img/Layer\ 8@1X.png');
         box-shadow: inset 0px -400px 100px -50px rgba(0,0,0,0.6);
     }
-    &__block:last-child{
+    &__block:last-child, &__block:nth-child(2){
         margin-right: 0;
     }
     &__block:nth-child(4){
@@ -79,4 +45,38 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 88px;
+}
+
+.block{
+    padding-left: $pd;
+    &__img{
+        margin-bottom: $pd;
+    }
+    &__data{
+        color: $grey;
+        font-size: $small-text;
+        margin-bottom: 20px;
+    }
+    &:first-child{
+        padding-left: 47px;
+    }
+    &:first-child &__data{
+        padding-top: 405px;
+        margin-bottom: 23px;
+        font-size: $small-text;
+    }
+    &__content{
+        color: $black;
+        font-size: $medium-text;
+        margin-bottom: 70px;
+        &--first{
+            font-size: $big-text;
+            color: $white;
+            width: 500px;
+            margin-bottom: 0;
+        }
+    }
+    &__author{
+        width: 54px;
+    }
 }
