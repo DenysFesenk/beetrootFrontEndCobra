@@ -8,27 +8,29 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
 	<form action="/login" method="post" class="form-login">
-		<ul class="form-login__input">
+		<ul class="form-login__list">
 			<li class="form-login__action">
-				<span class="form-login__sign-in">Sign in</span>
-				<span class="form-login__join-us">Join us</span>
+				<a href="#" class="form-login__activ">Sign in</a>
+				<a href="#" class="form-login__activ">Join us</a>
 			</li>
-			<li class="form-login__username">
+			<li class="form-login__input">
 				<label for="Usermane">Username</label>
 				<input type="text" id="Username" name="Username">
 			</li>
-			<li class="form-login__password">
+			<li class="form-login__input">
 				<label for="password">Password</label>
 				<input type="password" id="password" name="password">
 			</li>
 			<li class="form-login__checkbox">
-				<input type="checkbox" id="check" name="check" checked>
-				<label for="check">Keep me signed in</label>
+				<label for="check">
+					<input type="checkbox" id="check" name="check" checked>
+					<span class="flag" name="check"></span>
+					<span>Keep me signed in</span>
+				</label>
 			</li>
 			<li class="form-login__btn">
-				<button type="">Sign in</button>
+				<button type="submit" class="sign-in">Sign in</button>
 			</li>
 			<li class="form-login__setting">
 				<a href="#">Forgot password</a>
