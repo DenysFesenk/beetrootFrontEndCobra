@@ -40,6 +40,9 @@
             border-bottom: 2px solid $activ-color;
             margin-right: 26px;
         }
+        &:last-child:hover{
+            border-bottom: 2px solid $activ-color;
+        }
     }
     &__input{
         display: flex;
