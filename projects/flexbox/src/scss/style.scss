@@ -20,11 +20,9 @@
         background: url('../img/Layer\ 8@1X.png');
         box-shadow: inset 0px -400px 100px -50px rgba(0,0,0,0.6);
     }
-    &__block:last-child, &__block:nth-child(2){
-        margin-right: 0;
-    }
-    &__block:nth-child(4){
-        img {
+    &__block-img{
+        margin-bottom: 28px;
+        &--four{
             margin-bottom: 62px;
         }
     }
@@ -51,6 +49,9 @@
     padding-left: $pd;
     &__img{
         margin-bottom: $pd;
+        &:nth-child(4){
+            margin-bottom: 62px; 
+        }
     }
     &__data{
         color: $grey;
