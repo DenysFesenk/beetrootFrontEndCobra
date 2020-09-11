@@ -1,0 +1,33 @@
+$style: 'header';
+.#{$style}{
+    min-height: 100vh;
+    text-align: center;
+    background: url('../img/hero-bg.jpg@1X.jpeg') no-repeat;
+    background-size: 100%;
+    &__logo{
+        padding-top: 50px;
+        margin-bottom: 96px;
+        fill: $white;
+    }
+    &__title{
+        color: $white;
+        font-size: $header-title-size;
+        width: 591px;
+        text-transform: uppercase;
+        margin: 0 auto 53px;
+        font-weight: bold;
+        letter-spacing: 6.64px;
+    }
+    &__subtitle{
+        width: 476px;
+        color: $white;
+        font-size: $medium-size;
+        line-height: 1.93;
+        letter-spacing: 0.9px;
+        margin: 0 auto 100px;
+    }
+    &__anchor{
+        fill: $white;
+        cursor: pointer;
+    }
+}
