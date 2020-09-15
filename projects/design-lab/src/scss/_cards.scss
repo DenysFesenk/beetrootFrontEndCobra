@@ -1,0 +1,52 @@
+$style:'cards';
+.#{$style}{
+    margin-bottom: 139px;
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item{
+        width: 27%;
+        height: 237px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        padding-top: 169px;
+        padding-left: 47px;
+        font-size: $main-title-size;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 5.44px;
+        cursor: pointer;
+        background: url('../img/Layer\ 5\ copy@1X.jpeg')  100% no-repeat;
+        &:nth-child(2){
+            flex-grow: 2;
+            margin-bottom: 10px;
+            background: url('../img/Layer\ 5\ copy\ 3@1X.jpeg') no-repeat;
+        }
+        &:nth-child(3){
+            background: url('../img/Layer\ 5\ copy\ 2@1X.jpeg') no-repeat;
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        &:nth-child(4){
+            margin-bottom: 0;
+            background: url('../img/Layer\ 5\ copy\ 4@1X.jpeg') no-repeat;
+        }
+        &:nth-child(5){
+            flex-grow: 2;
+            margin-bottom: 0;
+            background: url('../img/Layer\ 5\ copy\ 4@1X\ \(1\).jpeg') no-repeat;
+        }
+        &:nth-child(6){
+            background: url('../img/Layer\ 5\ copy\ 4@1X\ \(2\).jpeg') no-repeat;
+            margin: 0;
+        }
+        &:hover{
+            opacity: .9;
+        }
+        & a{
+            text-decoration: none;
+            color: $white;
+        }
+    }
+}

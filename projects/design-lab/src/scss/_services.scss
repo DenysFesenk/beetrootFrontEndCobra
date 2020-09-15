@@ -1,0 +1,60 @@
+$style: 'services';
+.#{$style}{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: url('../img/services.jpg@1X.jpeg') 100% 100% no-repeat;
+    height:100%;
+    background-size: cover;
+    padding: 128px 0 109px;
+    color: $white;
+    margin-bottom: 119px;
+    height: max-content;
+    position: relative;
+    &__content{
+        width: 900px;
+        border: 2px solid $white;
+        position: relative;
+        border-top: none;
+    }
+    &__title{
+        position: absolute;
+        width: 900px;
+        font-size: $main-title-size;
+        letter-spacing: 5.44px;
+        font-weight: bold;
+        top: 26%;
+        transform: translateY(-50%);
+        text-transform: uppercase;
+        &:before, &:after{
+            content: '';
+            height: 2px;
+            width: 250px;
+            background-color: $white;
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+        }
+        &:before{
+            left: 0;
+        }
+        &:after{
+            right: 0;
+        }
+    }
+    &__text{
+        width: 530px;
+        font-weight: 300;
+        line-height: 1.5;
+        font-weight: 300;
+        font-size: $big-size;
+        margin: 0 auto;
+        &:first-child{
+            padding-top: 78px;
+        }
+        &:last-child{
+            padding-bottom: 30px;
+        }
+    }
+}

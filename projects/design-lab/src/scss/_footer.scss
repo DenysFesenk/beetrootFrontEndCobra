@@ -1,0 +1,16 @@
+$style:'footer';
+.#{$style}{
+   margin: 0 auto 200px;
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   &__logo{
+        margin-right: 36px;
+   }
+   &__link{
+        color: $black;
+        font-size: $small-size;
+        font-weight: 300;
+        text-decoration: none;
+   }
+}

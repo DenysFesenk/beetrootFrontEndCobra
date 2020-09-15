@@ -4,10 +4,11 @@ $style: 'header';
     text-align: center;
     background: url('../img/hero-bg.jpg@1X.jpeg') no-repeat;
     background-size: 100%;
+    margin-bottom: 150px;
     &__logo{
         padding-top: 50px;
         margin-bottom: 96px;
-        fill: $white;
+        fill: $black;
     }
     &__title{
         color: $white;
@@ -28,6 +29,8 @@ $style: 'header';
     }
     &__anchor{
         fill: $white;
-        cursor: pointer;
+        & svg{
+            cursor: pointer;
+        }
     }
 }

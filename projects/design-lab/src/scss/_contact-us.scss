@@ -1,0 +1,36 @@
+$style:'contact-us';
+.#{$style}{
+    width: 900px;
+    border: 2px solid $black;
+    margin: 0 auto 63px;
+    position: relative;
+    text-align: center;
+    &__title{
+        width: 400px;
+        position: absolute;
+        left: 50%;
+        font-size: $main-title-size;
+        text-transform: uppercase;
+        transform: translate(-50%, -50%);
+        background-color: $white;
+    }
+    &__text{
+        margin: 77px auto 42px;
+        width: 540px;
+        font-size: $big-size;
+        line-height: 1.62;
+        font-weight: 300;
+    }
+    &__btn{
+        width: 395px;
+        height: 58px;
+        border: solid 2px $black;
+        background-color: $black;
+        color: $white;
+        font-size: $big-size;
+        letter-spacing: 2.56px;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
