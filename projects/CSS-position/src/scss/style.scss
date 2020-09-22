@@ -5,14 +5,15 @@
 .block {
     margin: 0 auto;
     width: 100%;
+    padding: 108px 0 118px;
     &__title{
-        padding: 58px 0 64px;
         font-weight: 700;
         color: $black;
         font-size: $title-text;
         text-transform: uppercase;
         position: relative;
         text-align: center;
+        margin-bottom: 64px;
         &:before {
             position: absolute;
             content: '';
@@ -20,7 +21,7 @@
             height: 3px;
             background-color: #DDDBDB;
             left: 50%;
-            top: 103px;
+            top: 42px;
             transform: translateX(-50%);
         }
     }
@@ -29,7 +30,7 @@
         font-weight: 300;
         color: $grey;
         margin:0 auto 58px;
-        width: 560px;
+        max-width: 560px;
         display: flex;
         justify-content: center;
         align-items: center;
