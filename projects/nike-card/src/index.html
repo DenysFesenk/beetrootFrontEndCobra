@@ -16,31 +16,31 @@
 				<ul class="main__points">
 						<li class="main__item">
 							<label>
-								<input type="radio" name="radio" class="main__point" checked>
+								<input type="radio" name="radio" class="main__point" form="nike-form" checked>
 								<span class="main__new-point"></span>
 							</label>
 						</li>
 					<li class="main__item">
 						<label>
-							<input type="radio" name="radio" class="main__point">
+							<input type="radio" name="radio" class="main__point" form="nike-form">
 							<span class="main__new-point main__new-point--white-point"></span>
 						</label>
 					</li>
 					<li class="main__item">
 						<label>
-							<input type="radio" name="radio" class="main__point">
+							<input type="radio" name="radio" class="main__point" form="nike-form">
 							<span class="main__new-point main__new-point--red-point"></span>
 						</label>
 					</li>
 					<li class="main__item">
 						<label>
-							<input type="radio" name="radio" class="main__point">
+							<input type="radio" name="radio" class="main__point" form="nike-form">
 							<span class="main__new-point main__new-point--blue-point"></span>
 						</label>
 					</li>
 				</ul>
 			</div>
-			<div class="main__right-info">
+			<form action="/" class="main__right-info" id="nike-form">
 				<h2 class="main__title">Nike SB Stefan Janoski Max</h2>
 				<h3 class="main__subtitle">Unisex Skateboarding Shoe</h3>
 				<ul class="main__rating">
@@ -68,8 +68,8 @@
 						<option value="5">5</option>
 					</select>
 				</div>
-				<button class="main__btn">Add to cart</button>
-			</div>
+				<input type="submit" value="Add to cart" class="main__btn">
+			</form>
 		</div>
 	</main>
 	<script src="js/bundle.js"></script>
