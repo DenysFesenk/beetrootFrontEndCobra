@@ -1,0 +1,33 @@
+$style: 'header';
+.#{$style}{
+    &__text{
+        @include text($over-title-size, 500, $bluish-grey);
+        margin-bottom: 18px;
+    }
+    &__title{
+        @include text($title-size, 900, $marigold);
+        margin-bottom: 45px;
+    }
+    &__icon{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 39px;
+        position: relative;
+        width: 16px;
+        
+        &:before, &:after{
+            content:'';
+            position: absolute;
+            width: 210px;
+            height: 2px;
+            background-color: $marigold;
+            bottom: 50%;
+        }
+        &:before{
+            right: 23px;
+        }
+        &:after{
+            left: 23px;
+        }
+    }
+}

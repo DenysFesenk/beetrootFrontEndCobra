@@ -1,0 +1,35 @@
+
+@mixin flex($justify-content: flex-start, $align-items: stretch, $direction: row, $wrap: nowrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-wrap: $wrap;
+}
+
+@mixin text($size, $weight: 400, $color: white) {
+    font: {
+        size: $size;
+        weight: $weight;
+    }
+    color: $color;
+    @content;
+}
+
+@mixin svg($size: 16px, $color: black) {
+    width: $size;
+    height: $size;
+    fill: $color;
+    flex-shrink: 0;
+    transition-property: fill, opacity, stroke, filter, transform;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    @content;
+}
+
+@mixin transition($types...) {
+    transition-property: $types;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    @content;
+}

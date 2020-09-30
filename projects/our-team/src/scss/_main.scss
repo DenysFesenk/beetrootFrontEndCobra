@@ -1,0 +1,55 @@
+$style: 'main';
+.#{$style}{
+    display: flex;
+    @include flex(center, center);
+    &__section-left{
+
+    }
+    &__photo{
+
+    }
+    &__section-right{
+
+    }
+    &__name{
+
+    }
+    &__position{
+
+    }
+    &__social-list{
+        display: flex;
+        @include flex(center, center);
+        margin-bottom: 31px;
+    }
+    &__social-item{
+        width: 30px;
+        height: 30px;
+        border: 2px solid $very-light-pink;
+        border-radius: 50%;
+        display: flex;
+        cursor: pointer;
+        margin-right: 5px;
+        @include flex(center, center);
+        @include transition(all);
+        svg{
+            @include svg(11px, $very-light-pink);
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+        &:hover{
+            background-color: $very-light-pink;
+            border-color: $bluish-grey;
+            svg {
+                fill: $bluish-grey;
+            }
+        }
+    }
+    &__bio{
+
+    }
+    &__btn{
+
+    }
+}

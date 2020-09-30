@@ -1,0 +1,5 @@
+$style: 'footer';
+.#{$style}{
+    display: flex;
+    @include flex(center, center);
+}
