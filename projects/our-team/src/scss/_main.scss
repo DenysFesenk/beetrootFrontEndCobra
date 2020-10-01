@@ -6,6 +6,7 @@ $style: 'main';
     &__section-left{
         display: flex;
         flex: 1;
+        flex-basis: 15%;
         border-right: 1px solid $marigold;
     }
     &__photo{
@@ -65,6 +66,7 @@ $style: 'main';
         flex: 1;
         @include flex(flex-start, center, column);
         border-left: 1px solid $marigold;
+        padding: 0 84px;
     }
     &__name{
         padding-top: 86px;
@@ -124,7 +126,6 @@ $style: 'main';
         @include text($small-size, 500, $black);
         line-height: 1.71;
         margin-bottom: 22px;
-        // max-width: 416px;
     }
     &__block{
         width: 20px;

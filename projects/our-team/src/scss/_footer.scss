@@ -2,6 +2,9 @@ $style: 'footer';
 .#{$style}{
     display: flex;
     @include flex(center, center);
+    &__radio{
+        @include flex(center, column);
+    }
     &__item{
         margin-right: 9px;
         &:last-child{
@@ -9,8 +12,8 @@ $style: 'footer';
         }
     }
     &__point{
-        // opacity: 0.4;
-        display: none;
+        opacity: 0;
+        // display: none;
     }
     &__new-point{
         position: relative;
@@ -19,13 +22,15 @@ $style: 'footer';
             position: absolute;
             width: 11px;
             height: 11px;
-            border: 1px solid $black;
-            background-color: $black;
+            border: 1px solid $marigold;
+            background-color: $marigold;
             border-radius: 50%;
+            right: 50%;
+            top: 10%;
+            cursor: pointer;
         }
     }
-    input[type=radio]:checked ~ span:before {
-        background-color: $marigold;
-
+    input[type=radio]:checked ~ span:after {
+        background-color: #ffffff;
     }
 }
