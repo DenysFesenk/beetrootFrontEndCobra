@@ -1,0 +1,38 @@
+$style: 'header';
+.#{$style}{
+    min-height: 100vh;
+    background: src'.../img/malina-milk.png' no-repeat;
+   .nav{
+       @include flex(space-between, center,row);
+       &__logo{
+            font-family: 'Pacifico', cursive;
+            @include text($big-logo, normal, $black);
+       }
+       &__menu{
+            @include flex;
+       }
+       &__menu-item{
+            margin-right: 40px;
+            &:last-child{
+                margin-right: 0;
+            }
+            &:hover{
+                border-top: 3px solid $activ;
+            }
+       }
+       &__menu-link{
+        @include text($header-menu, 900, $black);
+        line-height: 1.56;
+           
+       }
+   } 
+   &__title{
+
+   }
+   &__content{
+
+   }
+   &__btn{
+
+   }
+}
