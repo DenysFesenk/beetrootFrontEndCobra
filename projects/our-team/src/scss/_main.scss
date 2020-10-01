@@ -11,8 +11,25 @@ $style: 'main';
     &__photo{
         display: flex;
         @include flex(center, center);
-        margin: 0 auto;
-        position: relative;
+        margin: 0 auto;position: relative;
+        &::before, &::after{
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-left: 2px solid $marigold;
+            border-bottom: 2px solid $marigold;
+            cursor: pointer;
+        
+        }
+        &:before{
+            left: -67px;
+            transform: rotate(45deg);
+        }
+        &:after{
+            right: -654px;
+            transform: rotate(225deg);
+        }
         img{
             border: 2px solid $marigold;
         }
@@ -107,6 +124,7 @@ $style: 'main';
         @include text($small-size, 500, $black);
         line-height: 1.71;
         margin-bottom: 22px;
+        max-width: 416px;
     }
     &__block{
         width: 20px;
