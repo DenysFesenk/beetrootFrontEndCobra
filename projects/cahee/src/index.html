@@ -5,11 +5,11 @@
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<title>Cahee | Home Page</title>
 	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/shar.png">
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/css/uikit.min.css" /> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/css/uikit.min.css" />
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="header">
+	<header class="header">		
 		<nav class="nav">
 			<div class="nav__container uk-container">
 				<a href="/" class="nav__logo">Cahee</a>
@@ -18,19 +18,19 @@
 						<a href="" class="nav__menu-link">HOME</a>
 					</li>
 					<li class="nav__menu-item">
-						<a href="" class="nav__menu-link">ABOUT</a>
+						<a href="#about" class="nav__menu-link">ABOUT</a>
 					</li>
 					<li class="nav__menu-item">
-						<a href="" class="nav__menu-link">SERVICES</a>
+						<a href="#services" class="nav__menu-link">SERVICES</a>
 					</li>
 					<li class="nav__menu-item">
-						<a href="" class="nav__menu-link">GALLERY</a>
+						<a href="#gallery" class="nav__menu-link">GALLERY</a>
 					</li>
 					<li class="nav__menu-item">
-						<a href="" class="nav__menu-link">BLOG</a>
+						<a href="#blog" class="nav__menu-link">BLOG</a>
 					</li>
 					<li class="nav__menu-item">
-						<a href="" class="nav__menu-link">CONTACT</a>
+						<a href="#contact" class="nav__menu-link">CONTACT</a>
 					</li>
 				</ul>
 			</div>
@@ -39,11 +39,25 @@
 			<h1 class="header__title">Fresh Life</h1>
 			<p class="header__content">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 			<button class="header__btn">GET FREE NOW</button>
+			<img src="./img/scroll.png" alt="scroll" class="header__scroll"> 
 		</div>
 	</header>
-	<!-- UIkit JS -->
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/js/uikit.min.js"></script> -->
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/js/uikit-icons.min.js"></script> -->
+	<main class="main">
+		<div class="about-us" id="about">
+			<img src="./img/malina.png" alt="malina" class="about-us__img">
+			<div class="about-us__content">
+				<h2 class="about-us__title">About Us</h2>
+				<p class="about-us__text">
+					Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+				</p>
+				<p class="about-us__text">
+					Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+				</p>
+			</div>
+		</div>
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/js/uikit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/js/uikit-icons.min.js"></script>
 	<script src="js/bundle.js"></script>
 </body>
 </html>

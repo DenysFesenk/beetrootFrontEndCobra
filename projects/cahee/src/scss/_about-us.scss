@@ -1,0 +1,20 @@
+$style: 'about-us';
+.#{$style}{
+    padding: 50px 30px;
+    @include flex(space-between, center);
+    background-color:$tifani;
+    &__img{
+        
+    }
+    &__content{
+        padding-left: 94px;
+    }
+    &__title{
+        @include text($main-title, bold, $white);
+        margin-bottom: 34px;
+    }
+    &__text{
+        @include text($content-text, 300, $white);
+        line-height: 1.59;
+    }
+}
