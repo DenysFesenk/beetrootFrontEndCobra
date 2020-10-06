@@ -3,37 +3,48 @@ $style: 'blog';
     margin: 0 auto;
     width: 100%;
     background-color: $light-purple;
+    padding: 100px 30px 120px;
     &__title{
-        font-size: $main-title;
-        padding: 100px 0 30px;
-        font-weight: 700;
+        @include text($main-title, bold, $white);
+        margin-bottom: 30px;
+        text-align: center;
     }
     &__subtitle{
+        @include text($content-text, 300, $black);
         max-width: 565px;
-        font-size: $content-text;
         margin:0 auto 46px;
-        font-weight: 300;
+        text-align: center;
     }
     &__content{
-        width: 1170px;
-        display: flex;
-        justify-content: space-between;
+        // max-width: 1170px;
+        @include flex(center, center);
     }
     &__item{
         display: flex;
         margin-bottom: 50px;
+        margin-right: 30px;
         max-width: 372px;
-        // height: 312px;
         background-position: bottom right;
-        background: url(../img/img@1X.jpeg) no-repeat;
-        box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+        background: url(../img/ciwi.jpeg) no-repeat;
+        box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
+        // @include padding-hack(26.7%, cover);
+        @include transition(transform);
         &:nth-child(2){
-            background: url(../img/img@1X2.jpeg) no-repeat;
+            // @include padding-hack(26.7%, cover);
+            background: url(../img/soup.jpeg) no-repeat;
             background-position: bottom right;
         }
         &:last-child{
-            background: url(../img/img@1X1.jpeg) no-repeat;
+            // @include padding-hack(26.7%, cover);
+            background: url(../img/malinas.jpeg) no-repeat;
             background-position: bottom center;
+            margin-right: 0;
+        }
+        &:hover{
+            transform: scale(1.1);
+        }
+        a{
+            box-shadow: inset 0px -150px 100px -50px rgba(0,0,0,0.8);
         }
     }
     &__data{
@@ -77,13 +88,22 @@ $style: 'blog';
         width: 201px;
         height: 56px;
         background-color: $red;
-        font-weight: 300;
-        font-size: $btn-size;
-        color: $white;
+        @include text($btn-size, 300, $white);
+        @include flex(center, center);
+        margin: 0 auto;
         box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+        outline: none;
         border: none;
         font-family: 'Raleway', sans-serif;
-        margin-bottom: 121px;
         cursor: pointer;
+        @include transition;
+        &:hover{
+            background-color: darken($color: $red, $amount: 10%);
+        }
+        &:active{
+            background-color: darken($color: $red, $amount: 20%);
+            box-shadow: inset 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
+            opacity: .98;
+        }
     }
 }
