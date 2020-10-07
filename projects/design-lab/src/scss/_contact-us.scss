@@ -2,20 +2,22 @@ $style:'contact-us';
 .#{$style}{
     width: 900px;
     border: 2px solid $black;
-    margin: 0 auto 63px;
+    padding: 77px 0 50px;
+    margin: 0 auto;
     position: relative;
     text-align: center;
     &__title{
         width: 400px;
         position: absolute;
         left: 50%;
+        top: 0;
         font-size: $main-title-size;
         text-transform: uppercase;
         transform: translate(-50%, -50%);
         background-color: $white;
     }
     &__text{
-        margin: 77px auto 42px;
+        margin: 0 auto 42px;
         width: 540px;
         font-size: $big-size;
         line-height: 1.62;

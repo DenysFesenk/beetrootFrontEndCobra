@@ -7,17 +7,10 @@ $style: 'services';
     background: url('../img/services.jpg@1X.jpeg') 100% 100% no-repeat;
     height:100%;
     background-size: cover;
-    padding: 128px 0 109px;
+    padding: 128px 10px 109px;
     color: $white;
-    margin-bottom: 119px;
     height: max-content;
     position: relative;
-    &__content{
-        width: 900px;
-        border: 2px solid $white;
-        position: relative;
-        border-top: none;
-    }
     &__title{
         position: absolute;
         width: 900px;
@@ -43,6 +36,13 @@ $style: 'services';
             right: 0;
         }
     }
+    &__content{
+        width: 900px;
+        border: 2px solid $white;
+        position: relative;
+        border-top: none;
+        padding: 78px 174px 30px 181px;
+    }
     &__text{
         width: 530px;
         font-weight: 300;
@@ -50,11 +50,5 @@ $style: 'services';
         font-weight: 300;
         font-size: $big-size;
         margin: 0 auto;
-        &:first-child{
-            padding-top: 78px;
-        }
-        &:last-child{
-            padding-bottom: 30px;
-        }
     }
 }

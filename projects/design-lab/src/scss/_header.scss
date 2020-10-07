@@ -4,11 +4,13 @@ $style: 'header';
     text-align: center;
     background: url('../img/hero-bg.jpg@1X.jpeg') no-repeat;
     background-size: 100%;
-    margin-bottom: 150px;
+    padding: 50px 0 65px;
     &__logo{
-        padding-top: 50px;
         margin-bottom: 96px;
         fill: $black;
+    }
+    &__logo-link{
+        display: inline-block;
     }
     &__title{
         color: $white;
@@ -25,10 +27,13 @@ $style: 'header';
         font-size: $medium-size;
         line-height: 1.93;
         letter-spacing: 0.9px;
-        margin: 0 auto 100px;
+        margin: 0 auto 50px;
     }
     &__anchor{
         fill: $white;
+        display: inline-block;
+        transition: all 0.5s ease-in;
+        
         & svg{
             cursor: pointer;
         }

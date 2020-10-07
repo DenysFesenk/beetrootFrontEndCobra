@@ -1,9 +1,9 @@
 $style: 'what-we-do';
 .#{$style}{
-    width: 900px;
+    // width: 900px;
     position: relative;
-    border: 2px solid $black;
-    margin: 0 auto 114px;
+    margin: 0 auto;
+    padding: 119px 10px 114px;
     &__title{
        position: absolute; 
        text-transform: uppercase;
@@ -15,13 +15,16 @@ $style: 'what-we-do';
        font-size: $main-title-size;
     }
     &__content{
-        width: 550px;
+        width: 900px;
         text-align: center;
         margin: 0 auto;
-        padding: 125px 0 92px;
+        padding: 125px 174px 92px 181px;
+        border: 2px solid $black;
     }
     &__block{
+        margin: 0 auto;
         margin-bottom: 110px;
+        max-width: 530px;
         &:nth-child(2){
             margin-bottom: 94px;
         }
