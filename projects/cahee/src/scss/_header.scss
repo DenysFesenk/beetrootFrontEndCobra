@@ -44,18 +44,21 @@ $style: 'header';
         margin-bottom: 31px;
    }
    &__btn{
+        display: inline-block;
         width: 200px;
         height: 55px;
         background-color: $activ;
         box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
         line-height: 1.35;
-        @include text($btn-size, 300, $white);
+        @include text($btn-size, 300, $white){
+            font-family: 'Raleway', sans-serif; 
+        };
         outline: none;
         border: none;
         cursor: pointer;
-        font-family: 'Raleway', sans-serif;
         @include transition;
         margin-bottom: 70px;
+        @include flex(center, center);
         &:hover{
             background-color: $white;
             border: 1px solid $activ;

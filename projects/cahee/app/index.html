@@ -5,14 +5,14 @@
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<title>Cahee | Home Page</title>
 	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/shar.png">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/css/uikit.min.css" />
+	<link rel="stylesheet" href="https://www.cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/css/uikit.min.css" />
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="header">		
 		<nav class="nav">
 			<div class="nav__container uk-container">
-				<a href="/" class="nav__logo">Cahee</a>
+				<a href="/" class="nav__logo" id="logo">Cahee</a>
 				<ul class="nav__menu">
 					<li class="nav__menu-item">
 						<a href="" class="nav__menu-link">HOME</a>
@@ -38,7 +38,7 @@
 		<div class="uk-container">
 			<h1 class="header__title">Fresh Life</h1>
 			<p class="header__content">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-			<button class="header__btn">GET FREE NOW</button>
+			<a href="#" class="header__btn">GET FREE NOW</a>
 			<img src="./img/scroll.png" alt="scroll" class="header__scroll"> 
 		</div>
 	</header>
@@ -114,14 +114,16 @@
 			<button class="gallery__btn">VIEW MORE</button>
 		</div>
 		<div class="subscribe">
-			<h3 class="subscribe__title">Subscribe To Us</h3>
-			<p class="subscribe__subtitle">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-			<form action="" class="subscribe__form">
-				<label for="" class="subscribe__label">
-					<input type="text" class="subscribe__input" placeholder="Your email address...">
-					<button type="submit" class="subscribe__btn">SUBSCRIBE</button>
-				</label>
-			</form>
+			<div class="uk-container">
+				<h3 class="subscribe__title">Subscribe To Us</h3>
+				<p class="subscribe__subtitle">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				<form action="" class="subscribe__form">
+					<label for="" class="subscribe__label">
+						<input type="text" class="subscribe__input" placeholder="Your email address...">
+						<button type="submit" class="subscribe__btn">SUBSCRIBE</button>
+					</label>
+				</form>
+			</div>
 		</div>
 		<div class="blog" id="blog">
 			<h1 class="blog__title">
@@ -165,11 +167,67 @@
 					</a>
 				</li>
 			</ul>
-			<button class="blog__btn">VIEW MORE</button>
+			<a href="#" class="blog__btn">VIEW MORE</a>
 		</div>
 	</main>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/js/uikit.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/js/uikit-icons.min.js"></script>
+	<footer class="footer" >
+		<div class="footer__container">
+			<h3 class="footer__title" id="contact">Contact</h3>
+			<p class="footer__subtitle">For new projects, ideas, business or anything you'd like to discuss, contact with me!</p>
+			<form action="" class="footer__form">
+				<ul class="footer__input">
+					<li class="footer__form-item">
+						<label for="">
+							<input type="text" class="footer__form-input" placeholder="Your name...">
+						</label>
+					</li>
+					<li class="footer__form-item">
+						<label for="">
+							<input type="email" class="footer__form-input" placeholder="Your email...">
+						</label>
+					</li>
+					<li class="footer__form-item">
+						<label for="">
+							<input type="tel" class="footer__form-input" placeholder="Your phone...">
+						</label>
+					</li>
+					<li class="footer__form-item">
+						<label for="">
+							<textarea type="text" class="footer__form-input footer__form-input--height" placeholder="Your messge..."></textarea>
+						</label>
+					</li>
+					<li class="footer__form-item">
+						<label for="">
+							<button type="submit" class="footer__form-btn">send</button>
+						</label>
+					</li>
+				</ul>
+
+				<ul class="footer__form-info">
+					<li class="footer__form-info-item">
+						<h6 class="footer__form-title">address</h6>
+						<a href="" class="footer__form-subtitle">123 City name, Street, City, Country</a>
+					</li>
+					<li class="footer__form-info-item">
+						<h6 class="footer__form-title">email</h6>
+						<a href="mailto:cahee@domain.com" class="footer__form-subtitle">cahee@domain.com</a>
+					</li>
+					<li class="footer__form-info-item">
+						<h6 class="footer__form-title">phone</h6>
+						<a href="tel: +0123456789" class="footer__form-subtitle">+012 345 6789</a>
+					</li>
+				</ul>
+			</form>
+		</div>
+		<div class="footer__info">
+			<span class="footer__text">© 2015 Company. All right reserved.</span>
+			<a href="#logo" class="footer__logo">Cahee</a>
+			<span class="footer__text">
+				Made with <span class="red-color">love</span> by Auskteez
+			</span>
+		</div>
+	</footer>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script src="js/bundle.js"></script>
 </body>
 </html>

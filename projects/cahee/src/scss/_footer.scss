@@ -1,0 +1,106 @@
+$style: 'footer';
+.#{$style}{
+    background: url(../img/bg-footer.png) no-repeat;
+    background-size: cover;
+    &__container{
+        padding: 101px 30px 120px;
+    }
+    &__title{
+        text-align: center;
+        @include text($main-title, bold, $black);
+        margin-bottom: 48px;
+    }
+    &__subtitle{
+        max-width: 350px;
+        line-height: 1.47;
+        @include text($content-text, 300, $black);
+        text-align: center;
+        margin: 0 auto 46px;
+    }
+    &__form{
+        @include flex(flex-start, stretch);
+    }
+    &__input{
+        margin-right: 170px;
+        width: 500px;
+    }
+    &__form-item:not(:last-child){
+        margin-bottom: 15px;
+        // @include flex(stretch, center);
+    }
+    &__form-input{
+        width: 100%;
+        height: 50px;
+        outline: none;
+        border: none;
+        background-color: $input-bg;
+        border-left: 5px solid rgba(0, 196, 196, 0);
+        @include transition;
+        @include text($small-size, bold, $white){
+            line-height: 2;
+        };
+        padding: 20px;
+        &:focus{
+            border-left: 5px solid $activ-form;
+            background-color: $tifani;
+        }
+        &::placeholder{
+            @include text($small-size, 300, $white){
+                ont-family: 'Raleway', sans-serif;
+            };
+        }
+        &--height{
+            min-height: 150px;
+        }
+    }
+
+    &__form-btn{
+        @include text($small-size, bold, $white){
+            ont-family: 'Raleway', sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+        };
+        height: 50px;
+        width: 100%;
+        background-color: $input-bg;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        @include transition;
+        &:hover{
+            border-left: 5px solid $activ-form;
+            background-color: $tifani;
+        }
+    }
+    &__form-info-item:not(:last-child){
+        margin-bottom: 20px;
+    }
+    &__form-title{
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        @include text($small-size, bold, $black);
+    }
+    &__form-subtitle{
+        @include text($small-size, 300, $black);
+    }
+    &__info{
+        background-color: $black;
+        padding: 37px 30px;
+        @include flex(space-between, center);
+    }
+    &__text{
+        @include text($header-menu, 300, $grey){
+            line-height: 1.67;
+            text-align: center;
+        };
+        .red-color{
+            color: $pink;
+        }
+    }
+    &__logo{
+        @include text($small-logo ,normal , $grey){
+            font-family: 'Pacifico', cursive;
+        };
+        padding: 0 10px;
+    }
+}
