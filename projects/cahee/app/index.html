@@ -11,7 +11,6 @@
 <body>
 	<header class="header">		
 		<nav class="nav">
-			<div class="nav__container uk-container">
 				<a href="/" class="nav__logo" id="logo">Cahee</a>
 				<ul class="nav__menu">
 					<li class="nav__menu-item">
@@ -33,18 +32,19 @@
 						<a href="#contact" class="nav__menu-link">CONTACT</a>
 					</li>
 				</ul>
-			</div>
 		</nav>
 		<div class="uk-container">
 			<h1 class="header__title">Fresh Life</h1>
 			<p class="header__content">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 			<a href="#" class="header__btn">GET FREE NOW</a>
-			<img src="./img/scroll.png" alt="scroll" class="header__scroll"> 
 		</div>
+		<a href="#about" class="header__scroll">
+			<img src="./img/scroll.png" alt="scroll" >
+		</a> 
 	</header>
 	<main class="main">
 		<div class="about-us" id="about">
-			<img src="./img/malina.png" alt="malina" class="about-us__img">
+			<img src="./img/cup-with-malina.png" alt="malina" class="about-us__img">
 			<div class="about-us__content">
 				<h2 class="about-us__title">About Us</h2>
 				<p class="about-us__text">
@@ -99,16 +99,16 @@
 			<div class="gallery__title">Gallery</div>
 			<div class="gallery__subtitle">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
 			<div class="gallery__albom">
-				<div class="gallery__container-first">
-					<img src="./img/persik.png" alt="" class="gallery__container-img">
-					<div class="gallery__container-mini">
-						<img src="./img/boruwka2.png" alt="">
-						<img src="./img/malina-black.png" alt="">
+				<div class="gallery__row">
+					<div class="gallery__img-wrapper gallery__img-wrapper--big-img"><img src="./img/persik.png" alt="" class="gallery__big-img"></div>
+					<div class="gallery__col">
+						<div class="gallery__img-wrapper gallery__img-wrapper--small-img"><img src="./img/boruwka2.png" alt=""></div>
+						<div class="gallery__img-wrapper gallery__img-wrapper--small-img"><img src="./img/malina-black.png" alt=""></div>
 					</div>
 				</div>
-				<div class="gallery__container-second">
-					<img class="gallery__container-second-img" src="./img/milk.png" alt="">
-					<img class="gallery__container-second-img" src="./img/hurma.png" alt="">
+				<div class="gallery__row">
+					<div class="gallery__img-wrapper gallery__img-wrapper--last-img"><img class="gallery__row-second-img" src="./img/milk.png" alt=""></div>
+					<div class="gallery__img-wrapper gallery__img-wrapper--last-img"><img class="gallery__row-second-img" src="./img/hurma.png" alt=""></div>
 				</div>
 			</div>
 			<button class="gallery__btn">VIEW MORE</button>

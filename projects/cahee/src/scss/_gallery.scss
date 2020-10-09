@@ -18,46 +18,47 @@ $style: 'gallery';
     &__albom{
         @include flex(flex-start, stretch, column);
         margin-bottom: 50px;
-    }
-    &__container-first{
-        margin-bottom: 30px;
-        @include flex;
-        padding: 0;
-        flex: 1;
-    }
-    &__container-img{
-        margin-right: 30px;
-        padding: 0;
-        background-color: red;
-        max-width: 770px;
-        max-height: 550px;
-        object-fit: cover;
-        box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
-        flex: 1;
-    }
-    &__container-mini{
         img{
-            @include flex(stretch, stretch, column);
+            display: block;
+        }
+    }
+    &__row{
+        overflow: hidden;
+        @include flex(stretch, stretch);
+        &:first-child{
             margin-bottom: 30px;
-            object-fit: cover;
-            padding: 0;
-            box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
-            &:last-child{
-                margin: 0;
+        }
+    }
+    &__img-wrapper{
+        flex: 1 1 50%;
+         @include padding-hack(32.5%, contain, true);
+         &--big-img{
+            @include padding-hack(42%, contain);
+            max-width: 770px;
+            margin-right: 30px;
+         }
+         &--small-img{
+             overflow: hidden;
+             flex: 1 1 50%;
+            @include padding-hack(66.8%, contain, true);
+            &:first-child{
+                margin-bottom: 30px;
+                @include padding-hack(62.5%, contain, true);
             }
-        }
+         }
+         &--last-img{
+             flex: 1 ;
+             &:first-child{
+                margin-right: 30px;
+             }
+         }
     }
-    &__container-second{
-        @include flex;
+    &__col{
+        flex: 1;
+        height: 100%;
+        @include flex(stretch, stretch, column);
     }
-    &__container-second-img{
-        min-width: 570px;
-        margin-right: 30px;
-        box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
-        &:last-child{
-        margin-right: 0;
-        }
-    }
+    
     &__btn{
         @include flex(center, center);
         width: 200px;
