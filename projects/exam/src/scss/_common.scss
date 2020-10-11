@@ -10,7 +10,7 @@ html, body{
 } 
 
 body{
-
+    font-family: $josefin;
 }
 
 ul{
@@ -19,4 +19,21 @@ ul{
 
 a{
     text-decoration: none;
+}
+
+.bnt-link{
+    display: inline-block;
+    // height: 60px;
+    padding: 24px 38px;
+    background-color: $main-color;
+    @include text($H60, normal, $testimonials-color){
+        letter-spacing: 1.2px;
+        line-height: 1.63px;
+        font-family: $aleo;
+        text-transform: uppercase;
+    }
+    @include transition(background-color);
+    &:hover{
+        background-color: rgba(84, 116, 253, .7);
+    };
 }

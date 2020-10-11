@@ -1,0 +1,44 @@
+$style: 'why-choose-us';
+.#{$style}{
+    background-image: url(../img/Rectangle7@1X.png);
+    background-size: cover;
+    padding: 0 225px 0 100px ;
+    @include flex(space-between, start);
+    &__content{
+        padding: 204px 0px 132px;
+    }
+    &__title{
+        @include text($H360, normal, $testimonials-color){
+            font-family: $aleo;
+            line-height: .72;
+        }
+        margin-bottom: 62px;
+    }
+    &__text{
+        @include text($H60, normal,$light-grey){
+            line-height: 1.63;
+            letter-spacing: 1.6px;
+            padding-right: 30px;
+            max-width: 600px;
+        }
+        &--padding{
+            padding-top: 30px;
+            margin-bottom: 48px;
+        }
+    }  
+    
+    &__photos{
+        // overflow: hidden;
+        position: relative;
+        padding-top: 120px;
+    }
+    &__img-wrapper{
+        width: 350px;
+        @include padding-hack(62.8%, contain, true);
+        &--position{
+            position: absolute;
+            top: 345px;
+            left: 125px;
+        }
+    }
+}

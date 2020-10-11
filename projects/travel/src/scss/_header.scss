@@ -2,9 +2,10 @@ $style: 'header';
 .#{$style}{
     min-height: 100vh;
     background-image: url(../img/bg-header.png);
-    display: flex;
+    @include flex;
+    position: relative;
     &__title{
-
+        // @include text;
     }
     &__subtitle{
 
@@ -33,6 +34,10 @@ $style: 'header';
 
     }
     .nav{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: $main-color;
         &__logo{
 
         }

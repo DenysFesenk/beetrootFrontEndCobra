@@ -1,0 +1,35 @@
+$style:'footer';
+.#{$style}{
+    background-color: $footer-bg;
+    padding: 120px 100px 50px 100px;
+    @include flex(center, center, column);
+    &__title{
+        @include text($H240, bold, $testimonials-color){
+            line-height: 1.08;
+            letter-spacing: 3.36px;
+        };
+        margin-bottom: 15px;
+    }
+    &__subtitle{
+        @include text($H60, normal, $testimonials-color){
+            line-height: 1.63;
+            letter-spacing: 1.6px;
+        };
+        margin-bottom: 30px;
+    }
+    &__social{
+        @include flex(center, center);
+    }
+    &__item{
+        margin-right: 24px;
+        &:last-child{
+            margin-right: 0;
+        }
+        svg{
+            &:hover{
+                fill: $main-color;
+            }
+        }
+        
+    }
+}

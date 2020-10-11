@@ -1,0 +1,129 @@
+$style: 'header';
+.#{$style}{
+    min-height: 100vh;
+    background-image: url(../img/bg-header.png);
+    background-size: cover;
+    @include flex(center, center, column);
+    font-family: $josefin;
+    position: relative;
+    &__title{
+        @include text($H480, 900, $testimonials-color){
+            line-height: 0.54;
+            letter-spacing: 4.8px;
+            text-transform: uppercase;
+        };
+        margin-bottom: 15px;
+    }
+    &__subtitle{
+        @include text($H220, 400, $testimonials-color){
+            letter-spacing: 5.42px;
+            line-height: 1.18
+        };
+        margin-bottom: 50px;
+    }
+    &__form{
+        margin-bottom: 120px;
+    }
+    .form{
+        @include flex(center, center, row, nowrap);
+        &__label{
+            @include flex(center, center, row, nowrap);
+        }
+        &__search{
+            flex: 1;
+            width: 500px;
+            height: 60px;
+            border: none;
+            outline: none;
+            @include text($H50, 400, $placeholder-color){
+                line-height: 1.86;
+                letter-spacing: 2.8px;
+                text-align: center;
+            };
+            &::placeholder{
+                padding: 126px;
+                // border: 2px solid $testimonials-color;
+                @include text($H50, 400, $placeholder-color){
+                    line-height: 1.86;
+                    letter-spacing: 2.8px;
+                };
+            }
+        }
+        &__btn{
+            display: inline-block;
+            width: 150px;
+            height: 60px;
+            @include flex(center, center);
+            border: 2px solid $testimonials-color;
+            background-color: $main-color;
+            cursor: pointer;
+            @include transition(background-color);
+            &:hover{
+                background-color: rgba(84, 116, 253, .7);
+            };
+        }
+        &__text{
+            @include text($H40, normal, $testimonials-color){
+                line-height: 1.86;
+                letter-spacing: 1.4px;
+                font-family: $aleo;
+                text-transform: uppercase;
+            };
+            margin-right: 15px;
+        }
+    }
+    &__scroll{
+        @include text($H40, 400, $testimonials-color){
+            line-height: 1.86;
+            letter-spacing: 2.8px;
+            position: relative;
+        }
+        @include transition(transform);
+        &:hover{
+            transform: scale(1.2);
+        }
+        &:after{
+            position: absolute;
+            content: '';
+            width: 9px;
+            height: 9px;
+            border-left: 1px solid $testimonials-color;
+            border-bottom: 1px solid $testimonials-color;
+            transform: rotate(-45deg);
+            right: 50%;
+            bottom: -15px;
+        } 
+    }
+    &__nav{
+        @include flex(space-between, center, row);
+        background-color: $main-color;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 28px 100px 32px;
+    }
+    .nav{
+        &__logo{
+            display: inline-block;
+            @include text($H240, bold, $testimonials-color){
+                line-height: 1.08;
+                letter-spacing: 2.4px;  
+            }
+        }
+        &__menu{
+            @include flex(center, center);
+        }
+        &__item:not(:last-child){
+            margin-right: 43px;
+            }
+        &__link{
+            cursor: pointer;
+            @include text($H40, normal, $testimonials-color){
+                font-family: $aleo;
+                line-height: 1.86;
+                text-transform: uppercase;
+            }
+        }
+    }
+        
+}
