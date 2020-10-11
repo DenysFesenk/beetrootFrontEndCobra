@@ -1,4 +1,46 @@
 $style: 'header';
 .#{$style}{
+    min-height: 100vh;
+    background-image: url(../img/bg-header.png);
+    display: flex;
+    &__title{
 
+    }
+    &__subtitle{
+
+    }
+    &__form{
+
+    }
+    .form{
+        &__search{
+
+        }
+        &__btn{
+    
+        }
+        &__text{
+
+        }
+        &__icon{
+
+        }
+    }
+    &__scroll{
+
+    }
+    &__nav{
+
+    }
+    .nav{
+        &__logo{
+
+        }
+        &__menu{
+
+        }
+        &__item{
+
+        }
+    }
 }
