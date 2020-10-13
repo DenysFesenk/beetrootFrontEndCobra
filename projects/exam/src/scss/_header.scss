@@ -23,6 +23,7 @@ $style: 'header';
     }
     &__form{
         margin-bottom: 120px;
+        display: flex;
     }
     .form{
         @include flex(center, center, row, nowrap);
