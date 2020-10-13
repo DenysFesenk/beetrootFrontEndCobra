@@ -1,0 +1,26 @@
+$style: 'block';
+.#{$style}{
+    padding: 100px;
+    &__list{
+        @include flex(center, center, column);
+        list-style: none;
+    }
+    &__item:not(:last-child){
+        margin-bottom: 10px;
+    }
+    &__btn{
+        min-width: 200px;
+        border: 1px solid #000;
+        padding: 10px 30px;
+        border-radius: 2px;
+        outline: none;
+        cursor: pointer;
+        @include transition(background-color);
+        &:hover{
+            background-color: #c6c6c6;
+        }
+        &:active{
+            box-shadow: inset 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
+        }
+    }
+}
