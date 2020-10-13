@@ -1,14 +1,13 @@
 $style: 'header';
 .#{$style}{
     min-height: 100vh;
-    background-image: url(../img/bg-header.png);
+    background: #99bdd0 url(../img/bg-header.png);
     background-size: cover;
     @include flex(center, center, column);
     font-family: $josefin;
     position: relative;
     &__title{
         @include text($H480, 900, $testimonials-color){
-            line-height: 0.54;
             letter-spacing: 4.8px;
             text-transform: uppercase;
         };

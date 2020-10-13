@@ -1,6 +1,6 @@
 $style: 'why-choose-us';
 .#{$style}{
-    background-image: url(../img/Rectangle7@1X.png);
+    background: $dark-grey url(../img/Rectangle7@1X.png);
     background-size: cover;
     padding: 0 225px 0 100px ;
     @include flex(space-between, start);
@@ -34,7 +34,7 @@ $style: 'why-choose-us';
     }
     &__img-wrapper{
         width: 350px;
-        @include padding-hack(62.8%, contain, true);
+        @include padding-hack(62.8%, contain);
         &--position{
             position: absolute;
             top: 345px;

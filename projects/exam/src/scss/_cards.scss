@@ -2,11 +2,11 @@ $style: 'cards';
 .#{$style}{
     &__item{
         padding: 229px 100px 100px 100px;
-        background-image: url(../img/Rectangle414@1X.png);
+        background: #aa6b4f url(../img/Rectangle414@1X.png);
         background-size: cover;
         @include flex(flex-start, start);
         &--position-right{
-            background-image: url(../img/Rectangle4141@1X.png);
+            background: #fb9179 url(../img/Rectangle4141@1X.png);
             background-size: cover;
             @include flex(flex-end, start);
         }

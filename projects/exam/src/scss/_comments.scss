@@ -1,7 +1,7 @@
 $style: 'comments';
 .#{$style}{
     padding: 120px 100px 200px 100px;
-    background-image: url(../img/Rectangle4142@1X.png);
+    background: $dark-grey url(../img/Rectangle4142@1X.png);
     background-size: cover;
     &__title{
         @include text($H360, normal, $white){
@@ -15,10 +15,13 @@ $style: 'comments';
         @include flex(stretch, stretch);
     }
     &__img-wrapper{
-        width: 100%;
-        @include padding-hack(22.1%, contain, true);
+        // width: 100%;
+        background-size: cover;
+        display: flex;
+        flex: 1;
     }
     &__content{
+        flex: 1;
         background-color: $dark-grey;
         padding: 50px 54px 48px 60px;
     }
@@ -33,6 +36,7 @@ $style: 'comments';
         }
         .start{
             @include text($H360, bold, $main-color);
+            padding-bottom: 0;
         }
     }
 }
