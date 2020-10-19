@@ -1,0 +1,45 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    min-height: 100vh;
+    font-size: 100%;
+} 
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn-style{
+    padding: 14px 64px 15px 65px;
+    @include text($H250, bold, $white){
+        text-transform: uppercase;
+    };
+    background-color:$pink;
+    border-radius: 32.5px;
+    @include transition;
+    &:hover{
+        color: $pink;
+        background-color: $white;
+    }
+    &--header{
+        color: $pink;
+        background-color: $white;
+        @include transition;
+        &:hover{
+            color: $white;
+            background-color: $pink;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+$style: 'header';
+.#{$style}{
+    min-height: 100vh;
+    background: $pink url(../img/bg-header.png);
+    position: relative;
+    @include flex(center, start, column);
+    &__content{
+        padding: 0 90px;
+    }
+    &__title{
+        max-width: 450px;
+        margin-bottom: 32px;
+        @include text($H750, bold, $white){
+            text-transform: uppercase;
+            line-height: 1;
+        };
+    }
+    &__text{
+        margin-bottom: 32px;
+        max-width: 70%;
+        @include text($H290, normal, $white);
+    }
+    .nav{
+        position: absolute;
+        padding: 17px 56px;
+        top: 0;
+        width: 100%;
+        @include flex(space-between, center);
+        background-color: rgba(255, 127, 127, .75);
+        &__logo{
+            img{
+                width: 80%;
+            }
+        }
+        &__menu{
+            @include flex(center, center);
+        }
+        &__item:not(:last-child){
+            margin-right: 65px;
+        }
+        &__link{
+            @include text($H200, bold, $white){
+                text-transform: uppercase;
+            }
+            @include transition;
+            &:hover{
+                color: $black;
+            }
+        }
+        &__search{
+            img{
+                width: 80%;
+            }
+        }
+    }
+}
