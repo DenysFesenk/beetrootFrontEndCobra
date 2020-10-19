@@ -24,39 +24,37 @@ $style: 'gallery';
     }
     &__row{
         overflow: hidden;
-        @include flex(stretch, stretch);
-        &:first-child{
-            margin-bottom: 30px;
+        @include flex(flex-start, stretch);
+        margin-bottom: 30px;
+        &:last-child{
+            margin-bottom: 0;
         }
     }
     &__img-wrapper{
-        flex: 1 1 50%;
-         @include padding-hack(32.5%, contain, true);
          &--big-img{
-            @include padding-hack(42%, contain);
-            max-width: 770px;
+             width: 100%;
+             @include padding-hack(41.1%, contain);
             margin-right: 30px;
          }
          &--small-img{
-             overflow: hidden;
-             flex: 1 1 50%;
-            @include padding-hack(66.8%, contain, true);
-            &:first-child{
-                margin-bottom: 30px;
-                @include padding-hack(62.5%, contain, true);
+            width: 50%;
+            margin-bottom: 30px;
+            @include padding-hack(50%, contain, true);
+            &:last-child{
+                margin-bottom: 0;
             }
          }
          &--last-img{
-             flex: 1 ;
-             &:first-child{
-                margin-right: 30px;
-             }
+            width: 100%;
+            margin-right: 30px;
+            @include padding-hack(32.5%, contain);
+            &:last-child{
+                margin-right: 0;
+            }
          }
     }
-    &__col{
-        flex: 1;
-        height: 100%;
-        @include flex(stretch, stretch, column);
+    &__col{;
+        
     }
     
     &__btn{
