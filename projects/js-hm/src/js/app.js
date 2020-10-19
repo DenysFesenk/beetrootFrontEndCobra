@@ -1,12 +1,12 @@
 // 1.Запросите у пользователя его имя и выведите в ответ: «Привет, его имя!».
-let firstBtn = document.getElementById('first'); //достаю кнопку из html файла 
+const firstBtn = document.getElementById('first'); //достаю кнопку из html файла 
 firstBtn.addEventListener( 'click', () => { // при нажатии на клик выполняется действие 
-    var name = prompt('Как вас зовут ?'); // запрашиваю имя
+    let name = prompt('Как вас зовут ?'); // запрашиваю имя
     alert (`Привет, ${name}!`); // Выдаю имя 
 });
 
 // 2.Запросите у пользователя длину стороны квадрата и выведите периметр такого квадрата.
-let secondBtn = document.getElementById('second');
+const secondBtn = document.getElementById('second');
 secondBtn.addEventListener('click', () => {
     let sizeOfSquare = prompt('Введите длину стороны квадрата.', 20);
     let sumSquare = 4 * sizeOfSquare;
@@ -15,16 +15,16 @@ secondBtn.addEventListener('click', () => {
 
 
 // 3.Запросите у пользователя год его рождения, посчитайте, сколько ему лет и выведите результат. Текущий год укажите в коде как константу.
-let thirdBtn = document.getElementById('third');
+const thirdBtn = document.getElementById('third');
 thirdBtn.addEventListener('click', () => {
     let yearYourBirthday = prompt('В каком году вы родились ?', 1900);
-    var today = new Date();
+    let today = new Date();
     let yourAge = today.getFullYear() - yearYourBirthday;
     alert(`Вам ${yourAge} лет!`);
 });
 
 // 4.Запросите у пользователя радиус окружности и выведите площадь такой окружности.
-let fourthBtn = document.getElementById('fourth');
+const fourthBtn = document.getElementById('fourth');
 fourthBtn.addEventListener('click', () => {
     let r = prompt('Задайте радиус окружности?', 30);
     let p = 3.1415926535;
@@ -34,7 +34,7 @@ fourthBtn.addEventListener('click', () => {
 });
 
 // 5.Запросите у пользователя расстояние в км между двумя городами и за сколько часов он хочет добраться. Посчитайте скорость, с которой необходимо двигаться, чтобы успеть вовремя.
-let fifthBtn = document.getElementById('fifth');
+const fifthBtn = document.getElementById('fifth');
 fifthBtn.addEventListener('click', () => {
     let distance = prompt('Какая дистанция между точкой А и Б?', 340);
     let timeToMove = prompt('За сколько времени вы планируете добраться ?', 6);
@@ -44,7 +44,7 @@ fifthBtn.addEventListener('click', () => {
 });
 
 // 6.Реализуйте конвертор валют. Пользователь вводит доллары, программа переводит в евро. Курс валюты храните в константе.
-let sixthBtn = document.getElementById('sixth');
+const sixthBtn = document.getElementById('sixth');
 sixthBtn.addEventListener('click', () => {
     let USD = prompt(`Какую сумму доллоров вы желаете поменять ?`, 1000);
     const EUR = 0.85;
@@ -53,7 +53,7 @@ sixthBtn.addEventListener('click', () => {
 });
 
 // 7.Пользователь указывает объем флешки в Гб. Программа должна посчитать, сколько файлов размером в 820 Мб помещается на флешку.
-let seventhBtn = document.getElementById('seventh');
+const seventhBtn = document.getElementById('seventh');
 seventhBtn.addEventListener('click', () => {
     let memory = prompt('Какой у вас обьем флешки в ГБ?', 16);
     let files = (memory * 1000) / 820;
@@ -63,7 +63,7 @@ seventhBtn.addEventListener('click', () => {
 });
 
 // 8.Пользователь вводит сумму денег в кошельке и цену одной шоколадки. Программа выводит, сколько шоколадок может купить пользователь, и сколько сдачи у него останется.
-let eighthBtn = document.getElementById('eighth');
+const eighthBtn = document.getElementById('eighth');
 eighthBtn.addEventListener('click', () => {
     let amountOfMoney = prompt('Сколько у вас есть денег ?', 200);
     let chokolate = prompt('Цена одной шоколадки?', 28.5);
@@ -75,7 +75,7 @@ eighthBtn.addEventListener('click', () => {
 });
 
 // 9.Запросите у пользователя трехзначное число и выведите его задом наперед. Для решения задачи вам понадобится оператор % (остаток от деления).
-let ninthBtn = document.getElementById('ninth');
+const ninthBtn = document.getElementById('ninth');
 ninthBtn.addEventListener('click', () => {
     let num = prompt('Введите любое число! Желательно трехзначное!', 598);
     function getReversedNum(num) {
@@ -90,7 +90,7 @@ ninthBtn.addEventListener('click', () => {
 });
 
 // 10.Пользователь вводит сумму вклада в банк на 2 месяца, с процентной ставкой депозита 5% годовых. Вывести сумму начисленных процентов.
-let tenthBtn = document.getElementById('tenth');
+const tenthBtn = document.getElementById('tenth');
 tenthBtn.addEventListener('click', () => {
     let num = prompt('Введите сумму вклада!');
     let months = prompt('На сколько месяцев вы хотите внести сумму ?');
@@ -100,7 +100,7 @@ tenthBtn.addEventListener('click', () => {
 });
 
 //1.1 Запросить у пользователя его возраст и определить, кем он является: ребенком (0–2), подростком (12–18), взрослым (18_60) или пенсионером (60– ...).
-let firstOne =document.getElementById('firstOne');
+const firstOne =document.getElementById('firstOne');
 firstOne.addEventListener('click', () => {
     let age = +prompt('Сколько вам лет?');
 
