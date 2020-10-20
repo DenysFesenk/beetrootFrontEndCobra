@@ -1,7 +1,7 @@
 $style: 'subscribe';
 .#{$style}{
     padding: 145px 30px 163px;
-    background: url(../img/boruwka.png) center right 30px;
+    background: url(../img/boruwka.png) center right 30px no-repeat; 
     &__title{
         @include text($subs-title, bold, $black);
         margin-bottom: 34px;

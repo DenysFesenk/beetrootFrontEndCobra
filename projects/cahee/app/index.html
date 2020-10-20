@@ -5,58 +5,66 @@
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<title>Cahee | Home Page</title>
 	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/shar.png">
-	<link rel="stylesheet" href="https://www.cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/css/uikit.min.css" />
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="header">		
-		<nav class="nav">
+	<!-- header -->
+	<header class="header">	
+		<div class="header__container container">
+			<nav class="nav">
 				<a href="/" class="nav__logo" id="logo">Cahee</a>
-				<ul class="nav__menu">
-					<li class="nav__menu-item">
-						<a href="" class="nav__menu-link">HOME</a>
-					</li>
-					<li class="nav__menu-item">
-						<a href="#about" class="nav__menu-link">ABOUT</a>
-					</li>
-					<li class="nav__menu-item">
-						<a href="#services" class="nav__menu-link">SERVICES</a>
-					</li>
-					<li class="nav__menu-item">
-						<a href="#gallery" class="nav__menu-link">GALLERY</a>
-					</li>
-					<li class="nav__menu-item">
-						<a href="#blog" class="nav__menu-link">BLOG</a>
-					</li>
-					<li class="nav__menu-item">
-						<a href="#contact" class="nav__menu-link">CONTACT</a>
-					</li>
-				</ul>
-		</nav>
-		<div class="uk-container">
-			<h1 class="header__title">Fresh Life</h1>
-			<p class="header__content">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-			<a href="#" class="header__btn">GET FREE NOW</a>
-		</div>
-		<a href="#about" class="header__scroll">
-			<img src="./img/scroll.png" alt="scroll" >
-		</a> 
+					<ul class="nav__menu">
+						<li class="nav__menu-item">
+							<a href="" class="nav__menu-link">HOME</a>
+						</li>
+						<li class="nav__menu-item">
+							<a href="#about" class="nav__menu-link">ABOUT</a>
+						</li>
+						<li class="nav__menu-item">
+							<a href="#services" class="nav__menu-link">SERVICES</a>
+						</li>
+						<li class="nav__menu-item">
+							<a href="#gallery" class="nav__menu-link">GALLERY</a>
+						</li>
+						<li class="nav__menu-item">
+							<a href="#blog" class="nav__menu-link">BLOG</a>
+						</li>
+						<li class="nav__menu-item">
+							<a href="#contact" class="nav__menu-link">CONTACT</a>
+						</li>
+					</ul>
+			</nav>
+			<div class="header__block">
+				<h1 class="header__title">Fresh Life</h1>
+				<p class="header__content">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+				<a href="#" class="header__btn">GET FREE NOW</a>
+			</div>
+			<a href="#about" class="header__scroll">
+				<img src="./img/scroll.png" alt="scroll" >
+			</a> 
+		</div>	
 	</header>
 	<main class="main">
+		<!-- about-us -->
 		<div class="about-us" id="about">
-			<img src="./img/cup-with-malina.png" alt="malina" class="about-us__img">
-			<div class="about-us__content">
-				<h2 class="about-us__title">About Us</h2>
-				<p class="about-us__text">
-					Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
-				</p>
-				<p class="about-us__text">
-					Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
-				</p>
+			<div class="about-us__container container">
+				<div class="about-us__img-wrapper">
+					<img src="./img/cup-with-malina.png" alt="malina" class="about-us__img">
+				</div>
+				<div class="about-us__content">
+					<h2 class="about-us__title">About Us</h2>
+					<p class="about-us__text">
+						Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+					</p>
+					<p class="about-us__text">
+						Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+					</p>
+				</div>
 			</div>
 		</div>
+		<!-- our-services -->
 		<div class="our-services" id="services">
-			<div class="our-services__wrapper">
+			<div class="our-services__container container">
 				<ul class="our-services__list">
 					<li class="our-services__item">
 						<a href="#" class="our-services__link">
@@ -95,26 +103,59 @@
 			</div>
 			<!-- <img src="./img/pomidor.png" alt="" class="our-services__img"> -->
 		</div>
+		<!-- gallery -->
 		<div class="gallery" id="gallery">
-			<div class="gallery__title">Gallery</div>
-			<div class="gallery__subtitle">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-			<div class="gallery__albom">
-				<div class="gallery__row">
-					<div class="gallery__img-wrapper gallery__img-wrapper--big-img"><img src="./img/persik.png" alt="" class="gallery__big-img"></div>
-					<div class="gallery__col">
-						<div class="gallery__img-wrapper gallery__img-wrapper--small-img"><img src="./img/boruwka2.png" alt=""></div>
-						<div class="gallery__img-wrapper gallery__img-wrapper--small-img"><img src="./img/malina-black.png" alt=""></div>
-					</div>
-				</div>
-				<div class="gallery__row">
-					<div class="gallery__img-wrapper gallery__img-wrapper--last-img"><img class="gallery__row-second-img" src="./img/milk.png" alt=""></div>
-					<div class="gallery__img-wrapper gallery__img-wrapper--last-img"><img class="gallery__row-second-img" src="./img/hurma.png" alt=""></div>
-				</div>
+			<div class="gallery__container container">
+				<div class="gallery__title">Gallery</div>
+				<div class="gallery__subtitle">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+				<ul class="gallery__albom">
+					<li class="gallery__list-item gallery__list-item--big">
+						<div class="gallery__img-wrapper">
+							<img src="./img/persik.png" alt="" class="gallery__img">
+						</div>
+					</li>
+					<li class="gallery__list-item gallery__list-item--small">
+						<div class="gallery__img-wrapper gallery__img-wrapper--small">
+							<img src="./img/img1231.jpg" alt="" class="gallery__img">
+						</div>
+						<div class="gallery__img-wrapper">
+							<img src="./img/img1241.jpg" alt="" class="gallery__img">
+						</div>
+					</li>
+					<li class="gallery__list-item">
+						<div class="gallery__img-wrapper">
+							<img src="./img/milk.png" alt="" class="gallery__img">
+						</div>
+					</li>
+					<li class="gallery__list-item">
+						<div class="gallery__img-wrapper">
+							<img src="./img/hurma.png" alt="" class="gallery__img">
+						</div>
+					</li>
+				</ul>
+				<!-- <ul class="gallery__albom">
+					<li class="gallery__item gallery__item--big">
+						<div class="gallery__img-wrapper gallery__img-wrapper--big-img"><img src="./img/persik.png" alt="" class="gallery__big-img"></div>
+					</li>
+					<li class="gallery__item gallery__item--small">
+						<div class="gallery__col">
+							<div class="gallery__img-wrapper gallery__img-wrapper--small-img"><img src="./img/img1241.jpg" alt=""></div>
+							<div class="gallery__img-wrapper gallery__img-wrapper--small-img"><img src="./img/img1231.jpg" alt=""></div>
+						</div>
+					</li>
+					<li class="gallery__item">
+						<div class="gallery__img-wrapper gallery__img-wrapper--last-img"><img class="gallery__row-second-img" src="./img/milk.png" alt=""></div>
+					</li>
+					<li class="gallery__item">
+						<div class="gallery__img-wrapper gallery__img-wrapper--last-img"><img class="gallery__row-second-img" src="./img/hurma.png" alt=""></div>
+					</li>
+				</ul> -->
+				<button class="gallery__btn">VIEW MORE</button>
 			</div>
-			<button class="gallery__btn">VIEW MORE</button>
 		</div>
+		<!-- subscribe -->
 		<div class="subscribe">
-			<div class="uk-container">
+			<div class="subscribe__container container">
 				<h3 class="subscribe__title">Subscribe To Us</h3>
 				<p class="subscribe__subtitle">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 				<form action="" class="subscribe__form">
@@ -125,53 +166,57 @@
 				</form>
 			</div>
 		</div>
+		<!-- blog -->
 		<div class="blog" id="blog">
-			<h1 class="blog__title">
-				Blog
-			</h1>
-			<h3 class="blog__subtitle">
-				Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
-			</h3>
-			<ul class="blog__content">
-				<li class="blog__item">
-					<a href="">
-						<div class="blog__data">
-							<span>20</span>
-							<span>NOV</span>
-						</div>
-						<span class="blog__text">Green Smoothies: Too Much of a Good Thing?	
-							</span>
-						<span class="blog__last-time">By Auskteez - 2 hours ago</span>
-					</a>
-				</li>
-				<li class="blog__item">
-					<a href="">
-						<div class="blog__data">
-							<span>14</span>
-							<span>NOV</span>
-						</div>
-						<span class="blog__text">Growing Food and a “Thirst” for Innovation
-							</span>
-						<span class="blog__last-time">By Auskteez - 3 hours ago</span>
-					</a>
-				</li>
-				<li class="blog__item">
-					<a href="">
-						<div class="blog__data">
-							<span>10</span>
-							<span>NOV</span>
-						</div>
-						<span class="blog__text">Pesticides & Food: What You Need to Know
-							</span>
-						<span class="blog__last-time">By Auskteez - 6 hours ago</span>
-					</a>
-				</li>
-			</ul>
-			<a href="#" class="blog__btn">VIEW MORE</a>
+			<div class="blog__container container">
+				<h1 class="blog__title">
+					Blog
+				</h1>
+				<h3 class="blog__subtitle">
+					Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
+				</h3>
+				<ul class="blog__content">
+					<li class="blog__item">
+						<a href="">
+							<div class="blog__data">
+								<span>20</span>
+								<span>NOV</span>
+							</div>
+							<span class="blog__text">Green Smoothies: Too Much of a Good Thing?	
+								</span>
+							<span class="blog__last-time">By Auskteez - 2 hours ago</span>
+						</a>
+					</li>
+					<li class="blog__item">
+						<a href="">
+							<div class="blog__data">
+								<span>14</span>
+								<span>NOV</span>
+							</div>
+							<span class="blog__text">Growing Food and a “Thirst” for Innovation
+								</span>
+							<span class="blog__last-time">By Auskteez - 3 hours ago</span>
+						</a>
+					</li>
+					<li class="blog__item">
+						<a href="">
+							<div class="blog__data">
+								<span>10</span>
+								<span>NOV</span>
+							</div>
+							<span class="blog__text">Pesticides & Food: What You Need to Know
+								</span>
+							<span class="blog__last-time">By Auskteez - 6 hours ago</span>
+						</a>
+					</li>
+				</ul>
+				<a href="#" class="blog__btn">VIEW MORE</a>
+			</div>
 		</div>
 	</main>
+	<!-- footer -->
 	<footer class="footer" >
-		<div class="footer__container">
+		<div class="footer__container container">
 			<h3 class="footer__title" id="contact">Contact</h3>
 			<p class="footer__subtitle">For new projects, ideas, business or anything you'd like to discuss, contact with me!</p>
 			<form action="" class="footer__form">
@@ -219,12 +264,15 @@
 				</ul>
 			</form>
 		</div>
+		<!-- footer__info -->
 		<div class="footer__info">
-			<span class="footer__text">© 2015 Company. All right reserved.</span>
-			<a href="#logo" class="footer__logo">Cahee</a>
-			<span class="footer__text">
-				Made with <span class="red-color">love</span> by Auskteez
-			</span>
+			<div class="footer__info-container container">
+				<span class="footer__text">© 2015 Company. All right reserved.</span>
+				<a href="#logo" class="footer__logo">Cahee</a>
+				<span class="footer__text">
+					Made with <span class="red-color">love</span> by Auskteez
+				</span>
+			</div>
 		</div>
 	</footer>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>

@@ -3,7 +3,7 @@ $style: 'footer';
     background: url(../img/bg-footer.png) no-repeat;
     background-size: cover;
     &__container{
-        padding: 101px 30px 120px;
+        padding: 101px 15px 120px;
     }
     &__title{
         text-align: center;
@@ -85,7 +85,9 @@ $style: 'footer';
     }
     &__info{
         background-color: $black;
-        padding: 37px 30px;
+    }
+    &__info-container{
+        padding: 37px 15px;
         @include flex(space-between, center);
     }
     &__text{

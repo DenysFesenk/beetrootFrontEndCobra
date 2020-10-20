@@ -1,7 +1,7 @@
 $style: 'our-services';
 .#{$style}{
     background-color: $sky-blue;
-    &__wrapper{
+    &__container{
         padding: 179px 30px 151px;
         @include flex(flex-end, center);
         background: url(../img/pomidor.png) no-repeat;
