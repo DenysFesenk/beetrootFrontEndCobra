@@ -3,12 +3,11 @@
 @import "common";
 @import "./header";
 @import "./main";
-@import "./footer";
+@import "./dots";
 
 .container{
     max-width: 1140px;
     font-family: 'Raleway', sans-serif;
-    display: flex;
     @include flex(center, center, column);
     padding: 112px 0 94px;
     margin: 0 auto;

@@ -1,5 +1,6 @@
 $style: 'header';
 .#{$style}{
+    margin-bottom: 39px;
     &__text{
         @include text($over-title-size, 500, $bluish-grey);
         margin-bottom: 18px;
@@ -11,7 +12,6 @@ $style: 'header';
     &__icon{
         display: block;
         margin: 0 auto;
-        margin-bottom: 39px;
         position: relative;
         width: 16px;
         
