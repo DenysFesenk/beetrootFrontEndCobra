@@ -62,7 +62,7 @@ $style: 'main';
     &__border-photo{
         position: relative;
         min-height: 100%;
-        @include flex(center, center)
+        @include flex(center, center);
         &:before{
             content: '';
             position: absolute;
