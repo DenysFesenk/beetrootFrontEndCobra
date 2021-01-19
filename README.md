@@ -1,11 +1,11 @@
 # Gulp-assembler
-HomeWork1
-HomeWork2
-HomeWork3
-HomeWork4
-HW-CSS-Servises
-HWPhotoShop
-HW-CSS-Shopping
+https://denysfesenk.github.io/beetrootFrontEndCobra/projects/design-lab/app/
+```
+```
+https://denysfesenk.github.io/beetrootFrontEndCobra/projects/exam/app/
+```
+```
+https://denysfesenk.github.io/beetrootFrontEndCobra/projects/cahee/app/
 
 
 * Install `gulp-cli`:
